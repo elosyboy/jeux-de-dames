@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Bord</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Bienvenue, {{ user.first_name }}!</h1>
+    
+    <div class="info-section">
+        <p><strong>Nombre de joueurs en ligne :</strong> {{ users_online }}</p>
+    </div>
+
+    <div class="balance-section">
+        <p><strong>Votre solde actuel :</strong> {{ user.balance }} €</p>
+    </div>
+
+    <h2>Options de mise</h2>
+    <ul class="bet-options">
+        <li><button>Mise 2,50€</button></li>
+        <li><button>Mise 5€</button></li>
+        <li><button>Mise 10€</button></li>
+        <li><button>Mise 15€</button></li>
+        <li><button>Mise 20€</button></li>
+    </ul>
+
+    <h2>Alimenter votre compte</h2>
+    <form action="{{ url_for('topup') }}" method="post">
+        <label for="amount">Montant (€) :</label>
+        <input type="number" id="amount" name="amount" placeholder="Ex : 10" required>
+        <button type="submit">Alimenter via PayPal</button>
+    </form>
+
+    <div class="navigation-links">
+        <a href="{{ url_for('logout') }}">Se déconnecter</a>
+    </div>
+</body>
+</html>

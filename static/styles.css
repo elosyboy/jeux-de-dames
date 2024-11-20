@@ -1,0 +1,76 @@
+/* Styles existants */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    color: #2c3e50;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="number"] {
+    padding: 5px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2ecc71;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #2980b9;
+}
+
+/* Nouveaux styles ajoutés */
+.button {
+    background-color: #87CEEB; /* Bleu ciel */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+.button:hover {
+    background-color: #00BFFF; /* Bleu plus foncé lors du survol */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}

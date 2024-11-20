@@ -1,0 +1,23 @@
+# Règles pour ignorer les fichiers et dossiers spécifiques
+.env
+instance/
+__pycache__/
+*.pyc
+*.pyo
+*.db
+
+# Règles pour ignorer les environnements virtuels
+.venv/
+venv/
+env/
+
+# Règles pour ignorer les fichiers de log et de cache
+*.log
+*.cache
+*.bak
+
+# Règles pour ignorer les dossiers de dépendances
+node_modules/
+
+# Ajout depuis .venv/.gitignore (fichier généré par venv)
+# Created by venv; see https://docs.python.org/3/library/venv.html
